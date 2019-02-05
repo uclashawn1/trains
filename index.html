@@ -6,19 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
     <!-- jquery -->
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <!-- Moment.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Moment.js Reference -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!-- CSS -->
-    <link rel="styesheet" type="text/css" href="test.css">
+    <!-- <link rel="styesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="styesheet" type="text/css" href="assets/css/style.css">
     <!-- JavaScript -->
+    <script src="assets/javascript/app.js"></script>
 </head>
 <body>
     
@@ -38,7 +40,7 @@
         <h3 class="panel-title text-centered">Train Schedule</h3>
     </div>
     <div>
-        <table>
+        <table id="trainTable">
             <tr>
                 <th><i class="fas fa-train"></i>Train Name</th>
                 <th><i class="fas fa-train"></i>Destination</th>
@@ -80,10 +82,12 @@
 </div>
 
  <!--JavaScript-->
- <script src="trains.js"></script>
+ <script src="assets/javascript/app.js"></script>
  <!--Firebase app-->
- <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-database.js"></script>
  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-database.js"></script>
+ 
 
 </body>
 </html>
